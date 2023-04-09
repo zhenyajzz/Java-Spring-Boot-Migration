@@ -23,7 +23,7 @@ public class PriceListController {
     private PriceListVersionRepository priceListVersionRepository;
 
     @GetMapping
-    public ResponseEntity<List<PriceList>> getAllPriceLists() {
+    public ResponseEntity<List<PriceList>> getAllPriceList() {
         return ResponseEntity.ok(priceListRepository.findAll());
     }
 
